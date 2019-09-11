@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TriquiTrueque</string>
+    <string name="ussername">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="resgistrarme">Soy Nuevo, Deseo Registrarme</string>
+    <string name="or">ó</string>
+</resources>

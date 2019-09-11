@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".Login">
+
+
+    <EditText android:layout_width="280dp"
+              android:layout_height="wrap_content"
+              android:id="@+id/etUsuario"
+              android:inputType="textEmailAddress"
+              android:hint="@string/ussername"
+    />
+
+    <EditText android:layout_width="280dp"
+              android:layout_height="wrap_content"
+              android:id="@+id/etContraseña"
+              android:inputType="textEmailAddress"
+              android:hint="@string/password"
+              android:password="true" />
+
+    <Button android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btIniciar"
+            android:text="@string/iniciar"
+            android:textSize="15sp"
+            android:textAllCaps="false" />
+
+    <TextView android:layout_width="280dp"
+              android:layout_height="wrap_content"
+              android:textSize="15sp"
+              android:text="@string/or"
+              android:textAlignment="center"/>
+
+    <Button android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btResgistro"
+            android:text="@string/resgistrarme"
+            android:textSize="15sp"
+            android:textAllCaps="false" />
+
+
+
+</LinearLayout>
+
