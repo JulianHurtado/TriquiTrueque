@@ -5,4 +5,8 @@
     <string name="iniciar">Iniciar</string>
     <string name="resgistrarme">Soy Nuevo, Deseo Registrarme</string>
     <string name="or">ó</string>
+    <string name="name">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="email">Correo Electronico</string>
+    <string name="bnCrear">Crear</string>
 </resources>
