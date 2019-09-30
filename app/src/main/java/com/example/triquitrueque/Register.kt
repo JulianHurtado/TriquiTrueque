@@ -27,9 +27,6 @@ class Register : AppCompatActivity() {
     private var mDatabase: FirebaseDatabase? = null
     private var mAuth: FirebaseAuth? = null
 
-    //
-    // private val TAG = "activity_register"
-
     private val TAG = "CreateAccountActivity"
 
 
@@ -54,9 +51,12 @@ class Register : AppCompatActivity() {
         btnCreateAccount = findViewById<View>(R.id.btn_register) as Button
         mProgressBar = ProgressDialog(this)
         mDatabase = FirebaseDatabase.getInstance()
-        mDatabaseReference = mDatabase!!.reference!!.child("Users")
+        mDatabaseReference = mDatabase!!.reference!!.child("Usuarios")
         mAuth = FirebaseAuth.getInstance()
-        btnCreateAccount!!.setOnClickListener { createNewAccount() }
+
+        btnCreateAccount!!.setOnClickListener {
+            createNewAccount()
+        }
     }
 
     private fun createNewAccount() {
@@ -68,6 +68,8 @@ class Register : AppCompatActivity() {
 
         if (!TextUtils.isEmpty(firstName) && !TextUtils.isEmpty(lastName)
             && !TextUtils.isEmpty(email) && !TextUtils.isEmpty(password)) {
+
+            Toast.makeText(this, "Registro Exitoso", Toast.LENGTH_SHORT).show()
 
         } else {
             Toast.makeText(this, "Enter all details", Toast.LENGTH_SHORT).show()
@@ -101,7 +103,6 @@ class Register : AppCompatActivity() {
     }
 
     private fun updateUserInfoAndUI() {
-        //start next activity
         val intent = Intent(this, MainActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(intent)
@@ -113,13 +114,11 @@ class Register : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     Toast.makeText(this,
-                        "Verification email sent to " + mUser.getEmail(),
-                        Toast.LENGTH_SHORT).show()
+                        "Verification email sent to " + mUser.getEmail(), Toast.LENGTH_SHORT).show()
                 } else {
                     Log.e(TAG, "sendEmailVerification", task.exception)
                     Toast.makeText(this,
-                        "Failed to send verification email.",
-                        Toast.LENGTH_SHORT).show()
+                        "Failed to send verification email.", Toast.LENGTH_SHORT).show()
                 }
             }
     }

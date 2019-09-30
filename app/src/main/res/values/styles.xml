@@ -5,7 +5,8 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowBackground">@drawable/main_back</item>
+        <item name="colorPrimary">@color/actibar</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
@@ -17,13 +18,5 @@
     </style>
 
 
-
-    <item name="actibar" type="color">#3A6EC3</item>
-    <item name="darkblue" type="color">#00008b</item>
-
-    <integer-array name="EditColors">
-        <item>@color/actibar</item>
-        <item>@color/darkblue</item>
-    </integer-array>
 
 </resources>

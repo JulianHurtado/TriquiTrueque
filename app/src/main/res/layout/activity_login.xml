@@ -13,16 +13,31 @@
     <EditText android:layout_width="280dp"
               android:layout_height="wrap_content"
               android:id="@+id/etUsuario"
+              android:background="@android:color/white"
               android:inputType="textEmailAddress"
               android:hint="@string/ussername"
-    />
+              android:paddingBottom="2dp"    />
+
+    <TextView android:layout_width="280dp"
+              android:layout_height="wrap_content"
+              android:textSize="15sp"
+              android:text="@string/vacio"
+              android:textAlignment="center"/>
 
     <EditText android:layout_width="280dp"
               android:layout_height="wrap_content"
               android:id="@+id/etContraseña"
+              android:background="@android:color/white"
               android:inputType="textEmailAddress"
               android:hint="@string/password"
+              android:paddingBottom="2dp"
               android:password="true" />
+
+    <TextView android:layout_width="280dp"
+              android:layout_height="wrap_content"
+              android:textSize="15sp"
+              android:text="@string/vacio"
+              android:textAlignment="center"/>
 
     <Button android:layout_width="280dp"
             android:layout_height="wrap_content"
@@ -31,12 +46,6 @@
             android:textSize="15sp"
             android:textAllCaps="false" />
 
-    <TextView android:layout_width="280dp"
-              android:layout_height="wrap_content"
-              android:textSize="15sp"
-              android:text="@string/or"
-              android:textAlignment="center"/>
-
     <Button android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:id="@+id/btResgistro"
@@ -44,7 +53,11 @@
             android:textSize="15sp"
             android:textAllCaps="false" />
 
-
+    <com.google.android.gms.common.SignInButton
+            android:id="@+id/google_sign_in_button"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp" />
 
 </LinearLayout>
 

@@ -8,5 +8,9 @@
     <string name="name">Nombre</string>
     <string name="apellido">Apellido</string>
     <string name="email">Correo Electronico</string>
-    <string name="bnCrear">Crear</string>
+    <string name="bnCrear">Registrarme</string>
+
+    <string name="request_client_id">432332932065-nv2gairsucqavcmnsbk4b9o3s51l3q3n.apps.googleusercontent.com</string>
+    <string name="vacio"/>
 </resources>
+

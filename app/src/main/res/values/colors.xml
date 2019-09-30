@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="actibar">#3A6EC3</color>
+    <color name="colorPrimaryDark">#00008b</color>
+    <color name="colorAccent">#CCCCCC</color>
 
     <drawable name="FondoLogo">#D0D2D4</drawable>
 
