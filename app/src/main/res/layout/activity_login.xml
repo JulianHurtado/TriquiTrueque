@@ -16,7 +16,7 @@
               android:background="@android:color/white"
               android:inputType="textEmailAddress"
               android:hint="@string/ussername"
-              android:paddingBottom="2dp"    />
+              android:padding="10dp"    />
 
     <TextView android:layout_width="280dp"
               android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
               android:background="@android:color/white"
               android:inputType="textEmailAddress"
               android:hint="@string/password"
-              android:paddingBottom="2dp"
+              android:padding="10dp"
               android:password="true" />
 
     <TextView android:layout_width="280dp"
@@ -56,8 +56,26 @@
     <com.google.android.gms.common.SignInButton
             android:id="@+id/google_sign_in_button"
             android:layout_width="280dp"
+            android:layout_height="wrap_content"/>
+
+    <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp" />
+            android:layout_gravity="center_horizontal"
+             />
+
+    <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/status"
+            android:text="@string/signed_out" />
+
+    <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail"
+            tools:text="Firebase User ID: 123456789abc" />
 
 </LinearLayout>
 
