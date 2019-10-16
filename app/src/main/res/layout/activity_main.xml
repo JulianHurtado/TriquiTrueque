@@ -9,35 +9,22 @@
         android:gravity="center"
         tools:context=".MainActivity">
 
-    <ImageView
-            android:id="@+id/iv_profile"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/defaultphoto" />
-    <TextView
-            android:id="@+id/tv_name"
-            android:layout_width="wrap_content"
+    <Button android:layout_width="280dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/iv_profile"
-            android:layout_centerHorizontal="true"
-            android:text="Name"
-            android:textSize="18sp" />
-    <TextView
-            android:id="@+id/tv_email"
-            android:layout_width="wrap_content"
+            android:id="@+id/btPracticar"
+            android:background="@android:color/white"
+            android:text="@string/practicar"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"
+            android:textAllCaps="false" />
+
+    <Button android:layout_width="280dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_name"
-            android:layout_centerHorizontal="true"
-            android:text="Email"
-            android:textSize="18sp" />
-    <TextView
-            android:id="@+id/tv_id"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_email"
-            android:layout_centerHorizontal="true"
-            android:text="User ID"
-            android:textSize="18sp" />
+            android:id="@+id/btunjugador"
+            android:text="@string/unjugador"
+            android:background="@android:color/white"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"
+            android:textAllCaps="false" />
 
 </LinearLayout>

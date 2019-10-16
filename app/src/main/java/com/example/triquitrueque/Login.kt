@@ -195,6 +195,9 @@ class Login : AppCompatActivity() {
             //status.text = getString(R.string.facebook_status_fmt, user.displayName)
             //detail.text = getString(R.string.firebase_status_fmt, user.uid)
             buttonFacebookLogin.visibility = View.GONE
+            val intent = Intent(this, MainActivity::class.java)
+            //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            startActivity(intent)
             //buttonFacebookSignout.visibility = View.VISIBLE
         } else {
             //status.setText(R.string.signed_out)
@@ -216,16 +219,15 @@ class Login : AppCompatActivity() {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d(TAG, "signInWithCredential:success")
                     val user = auth.currentUser
-                    startActivity(Intent(this, MainActivity::class.java))
+                    //startActivity(Intent(this, MainActivity::class.java))
                     updateUI()
 
                 } else {
 
                     // If sign in fails, display a message to the user.
                     Log.w(TAG, "signInWithCredential:failure", task.exception)
-                    Toast.makeText(baseContext, "Authentication failed.",
-                        Toast.LENGTH_SHORT).show()
-                    updateUI(null)
+                    Toast.makeText(baseContext, "Authentication failed.", Toast.LENGTH_SHORT).show()
+                    updateUI()
                 }
 
             }

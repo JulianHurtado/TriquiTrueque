@@ -13,7 +13,8 @@
     <string name="request_client_id">432332932065-nv2gairsucqavcmnsbk4b9o3s51l3q3n.apps.googleusercontent.com</string>
     <string name="vacio"/>
 
-    <string name="facebook_app_id">1299074563599541</string> <string name="fb_login_protocol_scheme">fb1299074563599541</string>
+    <string name="facebook_app_id">1299074563599541</string>
+    <string name="fb_login_protocol_scheme">fb1299074563599541</string>
     <string name="facebook_status_fmt">Facebook User: %s</string>
     <string name="facebook_title_text">Facebook Login</string>
 
@@ -22,6 +23,9 @@
 
     <string name="firebase_status_fmt">Firebase User: %s</string>
     <string name="firebase_user_management">Firebase User Management</string>
+    <string name="practicar">Practicar</string>
+    <string name="unjugador">Un Jugador</string>
+    <string name="estadosunidos">EstadosUnidos</string>
 
 </resources>
 
